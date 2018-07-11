@@ -1,5 +1,5 @@
 body {
-    background-image: url('../../images/background.jpg');
+    /*background-image: url('../../images/background.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -7,7 +7,6 @@ body {
 
 .btn {
     background: rgba(255, 0, 0, 0.3);
-    font-size: 19px;
     color: white;
 
 }
@@ -97,16 +96,10 @@ body {
     width: 93px;
     height: 40px;
     text-align: center;
-
-}
-
-.dropdown {
-    width: 120px;
 }
 
 .nav-item:hover {
     background: rgba(255, 0, 0, 0.6);
-
 }
 
 .nav-link {
@@ -127,11 +120,15 @@ body {
     background: rgba(255, 0, 0, 0.6);
 }
 
-.fa-angle-down{
+.fa-angle-down {
     font-size: 1.5rem;
     color: white;
 }
 
 .navbar {
     height: 60px;
+}
+
+.image {
+    display: flex;
 }
