@@ -1,14 +1,13 @@
+/*General*/
 body {
-    /*background-image: url('../../images/background.jpg');*/
     background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../../images/background.jpg') top left repeat;
 
 }
 
 .btn {
     background: rgba(255, 0, 0, 0.3);
     color: white;
-
 }
 
 .btn:hover {
@@ -16,39 +15,25 @@ body {
 
 }
 
-#dropdownMenuButton {
-    margin-top: 0;
+/*DropDown buttons*/
 
+.dropdown-item:hover{
+    background-color: rgba(255, 0, 0, 0.6);
+    color: white;
 }
 
-.buttonAggressive {
-    margin-right: 450px;
-}
-
-.searchStyle {
-    background: #fff;
-}
-
-.searchStyle:hover::placeholder {
-    color: #fff;
-}
-
-.search {
-    margin-right: 2px;
-}
-
+/*Social buttons*/
 .facebookbutton {
     position: fixed;
     font-size: 40px;
     bottom: 10px;
     left: 10px;
-    color: white;
+    color: #3e5b99;
     cursor: pointer;
 }
 
 .facebookbutton:hover {
-    color: #3e5b99;
-
+    color: #436799;
 }
 
 .twitterbutton {
@@ -57,12 +42,12 @@ body {
     font-size: 40px;
     bottom: 10px;
     left: 55px;
-    color: white;
+    color: #1da1f2;
     cursor: pointer;
 }
 
 .twitterbutton:hover {
-    color: #1da1f2;
+    color: #23aef2;
 }
 
 .steambutton {
@@ -70,23 +55,21 @@ body {
     font-size: 40px;
     bottom: 10px;
     left: 100px;
-    color: white;
+    color: #1c4d6d;
     cursor: pointer;
 }
 
 .steambutton:hover {
-    color: #1c4d6d;
+    color: #1c6088;
 }
 
-#my-navbar {
-    justify-content: flex-start;
-    width: 100%;
+/*DropDown bar*/
+
+.dropdown-item{
+    width: 93px;
 }
 
-.form-inline {
-    flex-flow: row;
-}
-
+/*Navigation  bar*/
 .navbar-light, .bg-light {
     background: transparent !important;
 }
@@ -96,6 +79,7 @@ body {
     width: 93px;
     height: 40px;
     text-align: center;
+
 }
 
 .nav-item:hover {
@@ -129,6 +113,16 @@ body {
     height: 60px;
 }
 
-.image {
-    display: flex;
+@media only screen and (max-width: 600px) {
+    .nav-item {
+        width: 100%;
+    }
+
+    .search {
+        width: 75%;
+    }
+
+    .search-btn {
+        width: 25%;
+    }
 }
